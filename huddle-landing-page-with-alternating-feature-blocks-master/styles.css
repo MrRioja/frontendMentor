@@ -1,12 +1,20 @@
 /* Reset */
 
-:root {}
+:root {
+  /* Primary */
+  --Pink: #ff52bf;
+  /* Neutral */
+  --Very-Pale-Cyan: #ebfbff;
+  --Very-Dark-Cyan: #00252e;
+  --Grayish-Blue: #808d99;
+}
 
 * {
   margin: 0;
   padding: 0;
+  font-size: 18px;
   box-sizing: border-box;
-  font-family: '', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
