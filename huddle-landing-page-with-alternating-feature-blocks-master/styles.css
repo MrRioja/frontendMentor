@@ -24,6 +24,7 @@ html, body {
 /* Titles */
 
 .title {
+  color: var(--Very-Dark-Cyan);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -42,6 +43,7 @@ html, body {
 
 .started {
   height: 100vh;
+  margin-bottom: 7rem;
   background-size: contain;
   background-position: center;
   color: var(--Very-Dark-Cyan);
@@ -94,7 +96,7 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
-.content div:nth-child(1) button {
+.btn-get-stated {
   width: 16.5rem;
   color: white;
   border-radius: 2rem;
@@ -109,4 +111,66 @@ html, body {
 
 .content div:nth-child(2) img {
   width: 100%;
+}
+
+/* Cards */
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards .card:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Card */
+
+.card {
+  width: 90%;
+  display: grid;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+  grid-template-columns: 60% 40%;
+  box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card>div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card>div:nth-child(1) h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card>div:nth-child(1) p {
+  color: var(--Grayish-Blue);
+}
+
+.card>div:nth-child(1) h3, p {
+  width: 75%;
+}
+
+.card div:nth-child(2) img {
+  width: 100%;
+}
+
+.cards .card:nth-child(4) {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards .card:nth-child(4) h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
