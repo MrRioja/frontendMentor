@@ -4,9 +4,9 @@
   /* Primary */
   --Pink: #ff52bf;
   /* Neutral */
+  --Grayish-Blue: #808d99;
   --Very-Pale-Cyan: #ebfbff;
   --Very-Dark-Cyan: #00252e;
-  --Grayish-Blue: #808d99;
 }
 
 * {
@@ -19,4 +19,94 @@
 
 html, body {
   height: 100%;
+}
+
+/* Titles */
+
+.title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttons:hover {
+  opacity: 0.7;
+}
+
+/* started */
+
+.started {
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  color: var(--Very-Dark-Cyan);
+  background-repeat: no-repeat;
+  background: var(--Very-Pale-Cyan);
+  background-image: url(./images/bg-hero-desktop.svg);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 3rem 3rem 1.5rem;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 2rem;
+}
+
+.header button {
+  width: 12rem;
+  background: white;
+  border-radius: 2rem;
+  padding: 0.7rem 3rem;
+  color: var(--Very-Dark-Cyan);
+  box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Content */
+
+.content {
+  display: flex;
+}
+
+.content div:nth-child(1) {
+  width: 50%;
+  padding: 2rem;
+}
+
+.content div:nth-child(1) h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.content div:nth-child(1) p {
+  width: 29rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content div:nth-child(1) button {
+  width: 16.5rem;
+  color: white;
+  border-radius: 2rem;
+  padding: 1.2rem 3rem;
+  background: var(--Pink);
+}
+
+.content div:nth-child(2) {
+  width: 50%;
+  padding: 1.5rem;
+}
+
+.content div:nth-child(2) img {
+  width: 100%;
 }
