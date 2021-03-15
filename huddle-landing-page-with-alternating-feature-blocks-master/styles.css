@@ -117,6 +117,7 @@ html, body {
 
 .cards {
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
 }
@@ -132,6 +133,7 @@ html, body {
   width: 90%;
   display: grid;
   padding: 3rem 2rem;
+  background: white;
   margin-bottom: 2rem;
   border-radius: 0.8rem;
   grid-template-columns: 60% 40%;
@@ -154,7 +156,7 @@ html, body {
   color: var(--Grayish-Blue);
 }
 
-.card>div:nth-child(1) h3, p {
+.card>div:nth-child(1) h3, .card>div:nth-child(1) p {
   width: 75%;
 }
 
@@ -165,6 +167,8 @@ html, body {
 .cards .card:nth-child(4) {
   width: 50%;
   display: flex;
+  bottom: -120px;
+  position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -173,4 +177,70 @@ html, body {
 .cards .card:nth-child(4) h2 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  padding: 9rem 0 3rem 0;
+  justify-content: center;
+  color: var(--Very-Pale-Cyan);
+  background: var(--Very-Dark-Cyan);
+  grid-template-columns: repeat(3, 30%);
+}
+
+footer>div:nth-child(1) svg {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+footer>div:nth-child(1) svg path {
+  fill: white;
+}
+
+footer>div>div {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+}
+
+footer>div>div p {
+  width: 350px;
+  font-size: 0.9rem;
+}
+
+footer>div:nth-child(1)>div img {
+  margin-right: 1rem;
+  align-self: baseline;
+}
+
+footer>div:nth-child(2) {
+  display: grid;
+  column-gap: 5rem;
+  align-self: center;
+  justify-self: center;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer>div:nth-child(2) a {
+  color: white;
+  text-decoration: none;
+}
+
+footer>div:nth-child(3) a {
+  margin-right: 1rem;
+  margin-top: 4.5rem;
+}
+
+footer>span {
+  grid-column: 3/4;
+  margin-top: 2rem;
+  font-size: .7rem;
+}
+
+ion-icon {
+  color: white;
+  font-size: 1.2rem;
 }
