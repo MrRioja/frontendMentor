@@ -229,6 +229,10 @@ footer>div:nth-child(2) a {
   text-decoration: none;
 }
 
+footer>div:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
 footer>div:nth-child(3) a {
   margin-right: 1rem;
   margin-top: 4.5rem;
@@ -243,4 +247,8 @@ footer>span {
 ion-icon {
   color: white;
   font-size: 1.2rem;
+}
+
+ion-icon:hover {
+  color: var(--Pink);
 }
