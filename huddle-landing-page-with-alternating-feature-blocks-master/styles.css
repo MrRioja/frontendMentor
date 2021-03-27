@@ -257,13 +257,44 @@ ion-icon:hover {
   * {
     font-size: 14px;
   }
+  .started {
+    height: auto;
+  }
+  .header {
+    padding: 2.5rem 2rem;
+  }
   .header img {
     height: 1.2rem;
   }
   .header button {
-    width: 8rem;
+    width: 6.5rem;
     font-size: 0.7rem;
     border-radius: 2rem;
     padding: 0.6rem 0rem;
+  }
+  .content {
+    align-items: center;
+    flex-direction: column;
+  }
+  .content div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content div:nth-child(1) h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .content div:nth-child(1) p {
+    width: 82%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .content div:nth-child(1) button {
+    margin: 0 auto;
+  }
+  .content div:nth-child(2) {
+    width: 90%;
   }
 }
