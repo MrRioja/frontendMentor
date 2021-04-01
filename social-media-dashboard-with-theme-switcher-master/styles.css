@@ -1,3 +1,30 @@
+:root {
+  /* Colors */
+  /* Primary */
+  --Lime-Green: #1db489;
+  --Bright-Red: #dc414c;
+  --Facebook: #198ff5;
+  --Twitter: #1ca0f2;
+  --Instagram: linear gradient #fdc468 to #df4996;
+  --YouTube: #c4032a;
+  /* Dark Theme */
+  --Toggle: linear gradient #378fe6 to #3eda82;
+  /* Light Theme */
+  --Toggle: #aeb3cb;
+  /* Dark Theme */
+  --Very-Dark-Blue-bg: #1e202a;
+  --Very-Dark-Blue-bg-Pattern: #1f212e;
+  --Dark-Desaturated-Blue-Card-bg: #252a41;
+  --Desaturated-Blue-Text: #8b97c6;
+  --White-Text: #ffffff;
+  /* Light Theme */
+  --White-bg: #ffffff;
+  --Very-Pale-Blue-Top-bg: #f5f7ff;
+  --Light-Grayish-Blue-Card-bg: #f0f2fa;
+  --Dark-Grayish-Blue-Text: #63687e;
+  --Very-Dark-Blue-Text: #1e202a;
+}
+
 /* Reset */
 
 * {
