@@ -1,28 +1,28 @@
 :root {
   /* Colors */
   /* Primary */
+  --Twitter: #1ca0f2;
+  --YouTube: #c4032a;
+  --Facebook: #198ff5;
   --Lime-Green: #1db489;
   --Bright-Red: #dc414c;
-  --Facebook: #198ff5;
-  --Twitter: #1ca0f2;
   --Instagram: linear gradient #fdc468 to #df4996;
-  --YouTube: #c4032a;
   /* Dark Theme */
   --Toggle: linear gradient #378fe6 to #3eda82;
   /* Light Theme */
   --Toggle: #aeb3cb;
   /* Dark Theme */
+  --White-Text: #ffffff;
   --Very-Dark-Blue-bg: #1e202a;
+  --Desaturated-Blue-Text: #8b97c6;
   --Very-Dark-Blue-bg-Pattern: #1f212e;
   --Dark-Desaturated-Blue-Card-bg: #252a41;
-  --Desaturated-Blue-Text: #8b97c6;
-  --White-Text: #ffffff;
   /* Light Theme */
   --White-bg: #ffffff;
-  --Very-Pale-Blue-Top-bg: #f5f7ff;
-  --Light-Grayish-Blue-Card-bg: #f0f2fa;
-  --Dark-Grayish-Blue-Text: #63687e;
   --Very-Dark-Blue-Text: #1e202a;
+  --Very-Pale-Blue-Top-bg: #f5f7ff;
+  --Dark-Grayish-Blue-Text: #63687e;
+  --Light-Grayish-Blue-Card-bg: #f0f2fa;
 }
 
 /* Reset */
@@ -30,8 +30,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 14px;
   box-sizing: border-box;
-  font-family: '', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 html, body {
