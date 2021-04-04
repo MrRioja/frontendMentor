@@ -42,11 +42,11 @@ html, body {
 /* Toogle */
 
 .toggle-container {
-  position: relative;
-  display: inline-block;
   width: 80px;
   height: 40px;
+  position: relative;
   pointer-events: none;
+  display: inline-block;
 }
 
 .toggle-container input {
@@ -57,37 +57,37 @@ html, body {
 }
 
 .slider {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: #808080;
   transition: 0.4s;
+  position: absolute;
   pointer-events: none;
+  background-color: #808080;
 }
 
 .slider::before {
-  content: "";
-  position: absolute;
-  height: 24px;
-  width: 24px;
   left: 8px;
+  content: "";
+  width: 24px;
   bottom: 8px;
-  background-color: #fff;
+  height: 24px;
   transition: 0.2s;
+  position: absolute;
   pointer-events: none;
+  background-color: #fff;
 }
 
 .slider::after {
-  position: absolute;
-  content: "off";
-  height: 24px;
+  content: "";
   width: 24px;
   right: 10px;
   bottom: 6px;
+  height: 24px;
   transition: 0.2s;
+  position: absolute;
   pointer-events: none;
   color: #fff;
 }
