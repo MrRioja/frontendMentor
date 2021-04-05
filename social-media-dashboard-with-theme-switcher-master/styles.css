@@ -39,11 +39,30 @@ html, body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 80%;
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+header div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
 /* Toogle */
 
 .toggle-container {
-  width: 80px;
-  height: 40px;
+  width: 50px;
+  height: 30px;
+  margin-left: 15px;
   position: relative;
   pointer-events: none;
   display: inline-block;
@@ -69,27 +88,14 @@ html, body {
 }
 
 .slider::before {
-  left: 8px;
+  left: 5px;
   content: "";
-  width: 24px;
-  bottom: 8px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   transition: 0.2s;
   position: absolute;
   pointer-events: none;
   background-color: #fff;
-}
-
-.slider::after {
-  content: "";
-  width: 24px;
-  right: 10px;
-  bottom: 6px;
-  height: 24px;
-  transition: 0.2s;
-  position: absolute;
-  pointer-events: none;
-  color: #fff;
 }
 
 input:checked+.slider {
@@ -97,11 +103,11 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-  transform: translateX(40px);
+  transform: translateX(20px);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 15px;
 }
 
 .slider.round:before {
