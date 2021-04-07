@@ -113,3 +113,10 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Section Cards Totals  */
+
+.cards-total-fans {
+  display: flex;
+  margin-bottom: 5rem;
+}
