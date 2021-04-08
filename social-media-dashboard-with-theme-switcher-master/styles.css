@@ -114,9 +114,17 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+/* Main  */
+
+main {
+  width: 80%;
+}
+
 /* Section Cards Totals  */
 
 .cards-total-fans {
-  display: flex;
+  display: grid;
+  column-gap: 2rem;
   margin-bottom: 5rem;
+  grid-template-columns: repeat(4, 1fr);
 }
