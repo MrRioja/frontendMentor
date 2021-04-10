@@ -146,8 +146,7 @@ main {
 }
 
 .cards-total-fans .card-total-fans:nth-child(3) {
-  border-top-width: 7px;
-  border-top-style: solid linear-gradient(red, blue);
+  
 }
 
 .cards-total-fans .card-total-fans:nth-child(4) {
