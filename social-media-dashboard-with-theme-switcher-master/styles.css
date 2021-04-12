@@ -151,6 +151,7 @@ main {
 .card-total-fans span:nth-child(1) {
   height: 5px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .card-total-fans:nth-child(1) span:nth-child(1) {
@@ -167,4 +168,45 @@ main {
 
 .card-total-fans:nth-child(4) span:nth-child(1) {
   background: var(--YouTube);
+}
+
+.card-total-fans div:nth-child(2) {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.card-total-fans div:nth-child(2) span {
+  margin-left: 10px;
+  font-weight: bold;
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.card-total-fans div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-total-fans div:nth-child(3) h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--Very-Dark-Blue-Text);
+}
+
+.card-total-fans div:nth-child(3) span {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.Low {
+  font-weight: bold;
+  color: var(--Bright-Red);
+}
+
+.High {
+  font-weight: bold;
+  color: var(--Lime-Green);
 }
