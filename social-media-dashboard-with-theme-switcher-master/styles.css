@@ -131,9 +131,10 @@ main {
 /* Section Cards Totals  */
 
 .cards-total-fans {
+  top: -50px;
   display: grid;
   column-gap: 2rem;
-  margin-bottom: 5rem;
+  position: relative;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -209,4 +210,12 @@ main {
 .High {
   font-weight: bold;
   color: var(--Lime-Green);
+}
+
+.cards-container {
+  gap: 2rem;
+  display: grid;
+  margin-bottom: 5rem;
+  grid-template-rows: repeat(2, 6.5rem);
+  grid-template-columns: repeat(4, 1fr);
 }
