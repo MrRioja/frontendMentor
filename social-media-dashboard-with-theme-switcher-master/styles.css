@@ -46,7 +46,7 @@ body {
 
 .header {
   width: 100%;
-  height: 250px;
+  height: 220px;
   display: flex;
   justify-content: center;
   background: var(--Very-Pale-Blue-Top-bg);
@@ -140,10 +140,9 @@ main {
 /* Section Cards Totals  */
 
 .cards-total-fans {
-  /* width: 80% */
   display: grid;
   column-gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -206,9 +205,19 @@ main {
 .card-total-fans div:nth-child(3) span {
   font-size: 0.8rem;
   letter-spacing: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--Dark-Grayish-Blue-Text);
+}
+
+.card-total-fans span:nth-child(4) {
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.card-total-fans span:nth-child(4) img {
+  margin-right: 5px;
 }
 
 .Low {
@@ -223,13 +232,9 @@ main {
 
 /* Section Overview */
 
-.overview {
-  /* width: 80%; */
-}
-
 .overview h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--Dark-Grayish-Blue-Text);
 }
 
@@ -242,5 +247,30 @@ main {
 }
 
 .card {
-  border: 1px solid red;
+  padding: 1.3rem;
+  border-radius: 5px;
+  background: var(--Light-Grayish-Blue-Card-bg);
+}
+
+.card-header {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header>span {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.card-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-stats h2 {
+  margin-bottom: 0;
 }
