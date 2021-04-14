@@ -125,16 +125,25 @@ input:checked+.slider:before {
 /* Main  */
 
 main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
   width: 80%;
+  top: -120px;
+  position: relative;
 }
 
 /* Section Cards Totals  */
 
 .cards-total-fans {
-  top: -50px;
+  /* width: 80% */
   display: grid;
   column-gap: 2rem;
-  position: relative;
+  margin-bottom: 3.5rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -212,10 +221,26 @@ main {
   color: var(--Lime-Green);
 }
 
+/* Section Overview */
+
+.overview {
+  /* width: 80%; */
+}
+
+.overview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
 .cards-container {
   gap: 2rem;
   display: grid;
   margin-bottom: 5rem;
   grid-template-rows: repeat(2, 6.5rem);
   grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  border: 1px solid red;
 }
