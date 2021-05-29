@@ -7,21 +7,21 @@
   --Lime-Green: #1db489;
   --Bright-Red: #dc414c;
   /* Dark Theme */
-  --Toggle: linear gradient #378fe6 to #3eda82;
+  --toggle: linear gradient #378fe6 to #3eda82;
   /* Light Theme */
-  --Toggle: #aeb3cb;
+  --toggle: #aeb3cb;
   /* Dark Theme */
-  --White-Text: #ffffff;
-  --Very-Dark-Blue-bg: #1e202a;
-  --Desaturated-Blue-Text: #8b97c6;
-  --Very-Dark-Blue-bg-Pattern: #1f212e;
-  --Dark-Desaturated-Blue-Card-bg: #252a41;
+  /* --dark-bg: #1e202a;
+  --dark-top-bg: #1f212e;
+  --dark-card-bg: #252a41;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #8b97c6; */
   /* Light Theme */
-  --White-bg: #ffffff;
-  --Very-Dark-Blue-Text: #1e202a;
-  --Very-Pale-Blue-Top-bg: #f5f7ff;
-  --Dark-Grayish-Blue-Text: #63687e;
-  --Light-Grayish-Blue-Card-bg: #f0f2fa;
+  --bg: #ffffff;
+  --top-bg: #f5f7ff;
+  --card-bg: #f0f2fa;
+  --text-primary: #1e202a;
+  --text-secondary: #63687e;
 }
 
 /* Reset */
@@ -50,7 +50,7 @@ body {
   height: 220px;
   display: flex;
   justify-content: center;
-  background: var(--Very-Pale-Blue-Top-bg);
+  background: var(--top-bg);
 }
 
 .header div:nth-child(2) {
@@ -64,6 +64,19 @@ body {
   display: flex;
   margin: 2rem 0;
   justify-content: space-between;
+}
+
+.header-container>div>h1 {
+  font-size: 2rem;
+}
+
+.header-container>div>span {
+  font-weight: bold;
+  color: var(--textSecondary);
+}
+
+.header-container div:nth-child(2) h3 {
+  color: var(--textSecondary);
 }
 
 /* Toogle */
@@ -93,7 +106,7 @@ body {
   transition: 0.4s;
   position: absolute;
   pointer-events: none;
-  background-color: var(--Toggle);
+  background-color: var(--toggle);
 }
 
 .slider::before {
@@ -155,7 +168,7 @@ main {
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
-  background: var(--Light-Grayish-Blue-Card-bg);
+  background: var(--card-bg);
 }
 
 .card-total-fans span:nth-child(1) {
@@ -188,7 +201,7 @@ main {
 .card-total-fans div:nth-child(2) span {
   margin-left: 10px;
   font-weight: bold;
-  color: var(--Dark-Grayish-Blue-Text);
+  color: var(--textSecondary);
 }
 
 .card-total-fans div:nth-child(3) {
@@ -200,7 +213,7 @@ main {
 .card-total-fans div:nth-child(3) h1 {
   font-size: 3.5rem;
   margin-bottom: 0.3rem;
-  color: var(--Very-Dark-Blue-Text);
+  color: var(--text-primary);
 }
 
 .card-total-fans div:nth-child(3) span {
@@ -208,7 +221,7 @@ main {
   letter-spacing: 5px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: var(--Dark-Grayish-Blue-Text);
+  color: var(--textSecondary);
 }
 
 .card-total-fans span:nth-child(4) {
@@ -236,7 +249,7 @@ main {
 .overview h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--Dark-Grayish-Blue-Text);
+  color: var(--textSecondary);
 }
 
 .cards-container {
@@ -253,7 +266,7 @@ main {
   border-radius: 5px;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--Light-Grayish-Blue-Card-bg);
+  background: var(--card-bg);
 }
 
 .card-header {
@@ -266,7 +279,7 @@ main {
 .card-header>span {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--Dark-Grayish-Blue-Text);
+  color: var(--textSecondary);
 }
 
 .card-stats {
@@ -278,7 +291,7 @@ main {
 .card-stats h2 {
   margin-bottom: 0;
   font-size: 2.5rem;
-  color: var(--Very-Dark-Blue-Text);
+  color: var(--text-primary);
 }
 
 .card-stats span {
