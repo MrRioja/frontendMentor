@@ -272,6 +272,9 @@ footer {
 }
 
 @media(max-width: 950px) {
+  .logo {
+    width: 75px;
+  }
   main {
     display: flex;
     flex-direction: column;
@@ -297,6 +300,7 @@ footer {
   .snippets>h2, .snippets>p {
     width: 100%;
     text-align: center;
+    line-height: normal;
   }
   .sides {
     display: flex;
@@ -361,6 +365,7 @@ footer {
     margin-bottom: 2rem;
   }
   .brands-container {
+    margin-bottom: 4rem;
     flex-direction: column;
   }
   .brands-container img {
