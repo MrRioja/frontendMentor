@@ -104,6 +104,7 @@ main {
 }
 
 .btn-get-started:hover {
+  filter: brightness(105%);
   background: var(--Cyan-gradient);
 }
 
