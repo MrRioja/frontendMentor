@@ -278,7 +278,7 @@ main {
 
 .get-started h2 {
   font-size: 2.7rem;
-  margin: 4rem 0 2rem 0;
+  margin: 0 0 2rem;
 }
 
 .get-started p {
@@ -312,6 +312,7 @@ main {
   font-weight: bold;
   margin-left: 3rem;
   position: absolute;
+  margin-bottom: 1.5rem;
   color: var(--Light-Red);
 }
 
