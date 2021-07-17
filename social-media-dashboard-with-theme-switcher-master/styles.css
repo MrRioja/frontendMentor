@@ -42,6 +42,7 @@ body {
   display: flex;
   overflow: hidden;
   align-items: center;
+  background: var(--bg);
   flex-direction: column;
 }
 
