@@ -47,19 +47,24 @@ header a:hover {
   text-decoration: underline;
 }
 
-header a:not(:first-child) {
-  margin-left: 4rem;
+header>div {
+  display: flex;
+  column-gap: 4rem;
 }
 
 /* Main */
 
 main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background: var(--Dark-Blue-main-bg);
 }
 
 /* Section Intro */
 
 .intro {
+  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
@@ -119,16 +124,17 @@ main {
 
 .features {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  gap: 6rem 10rem;
   align-items: center;
+  margin-bottom: 10rem;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 
 .feature {
   width: 380px;
   display: flex;
   align-items: center;
-  margin-bottom: 6rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -150,12 +156,12 @@ main {
 /* Section Documentation */
 
 .documentation {
+  gap: 10rem;
   width: 90%;
   display: flex;
-  margin-left: 5%;
   align-items: center;
   margin-bottom: 10rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .instructions {
@@ -204,13 +210,11 @@ main {
 
 .assessments {
   display: flex;
+  column-gap: 3rem;
+  position: relative;
   align-items: center;
   margin-bottom: 7rem;
   justify-content: center;
-}
-
-.assessment:not(:first-child) {
-  margin-left: 3rem;
 }
 
 .assessment {
@@ -251,9 +255,9 @@ main {
 }
 
 .quotes {
-  top: -117px;
-  left: -1144px;
-  position: relative;
+  top: -35px;
+  left: -9px;
+  position: absolute;
 }
 
 /* Section Access */
@@ -319,9 +323,11 @@ main {
 /* Footer */
 
 footer {
+  width: 100%;
   height: 400px;
   display: flex;
   padding-top: 10rem;
+  justify-content: space-evenly;
   background: var(--Dark-Blue-footer-bg);
 }
 
