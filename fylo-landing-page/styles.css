@@ -323,16 +323,12 @@ main {
 /* Footer */
 
 footer {
-  width: 100%;
   height: 400px;
-  display: flex;
-  padding-top: 10rem;
-  justify-content: space-evenly;
+  display: grid;
+  padding: 10rem 10% 0;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
   background: var(--Dark-Blue-footer-bg);
-}
-
-.company {
-  margin-left: 5rem;
 }
 
 .company>img {
@@ -355,8 +351,8 @@ footer {
 
 .contacts {
   display: flex;
-  margin: 0 5rem;
   padding-top: 80px;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -379,6 +375,7 @@ footer {
   margin-top: 2rem;
   align-items: center;
   align-content: center;
+  justify-content: center;
   grid-template-rows: repeat(4, 40px);
   grid-template-columns: repeat(2, 80px);
 }
@@ -395,13 +392,18 @@ footer {
 /* Social Medias */
 
 .social-media {
-  display: flex;
-  padding: 5.4rem 4rem;
+  gap: 5%;
+  width: 50%;
+  display: grid;
+  padding-top: 5.4rem;
+  justify-self: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.social-media>.medias-container:not(:first-child) {
+/* .social-media>.medias-container:not(:first-child) {
   margin-left: 2rem;
-}
+} */
 
 .medias-container {
   width: 40px;
@@ -425,4 +427,138 @@ footer {
 .medias-container:hover {
   cursor: pointer;
   border: 1px solid var(--Cyan-gradient);
+}
+
+@media(max-width: 1175px) {
+  .features {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .feature {
+    width: 100%;
+  }
+  .feature img {
+    width: 20%;
+  }
+  .feature h2 {
+    font-size: 2rem;
+  }
+  .feature p {
+    width: 40%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .documentation {
+    gap: 0;
+    width: 80%;
+    flex-direction: column;
+  }
+  .documentation img {
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+  .instructions {
+    width: 60%;
+  }
+  .assessments {
+    gap: 3rem;
+    width: 70%;
+    flex-direction: column;
+  }
+  .assessment {
+    width: 75%;
+    height: auto;
+  }
+  .quotes {
+    top: -6%;
+    left: 11%;
+    position: absolute;
+  }
+  .options {
+    column-gap: 0.5rem;
+  }
+}
+
+@media(max-width: 1090px) {
+  .intro>img {
+    width: 80%;
+  }
+  .intro>h1 {
+    width: 80%;
+  }
+  .access {
+    width: 80%;
+  }
+  .get-started {
+    width: 75%;
+    padding: 5%;
+    height: auto;
+    justify-content: center;
+  }
+  .get-started p {
+    width: 100%;
+  }
+  .email-input {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #email {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #email:invalid+span {
+    display: none;
+  }
+  .email-input>.btn-get-started {
+    width: 100%;
+  }
+  .quotes {
+    top: -5%;
+    left: 10%;
+    position: absolute;
+  }
+  footer {
+    gap: 2rem;
+    height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 10rem 20% 5rem;
+  }
+  .company {
+    width: 100%;
+  }
+  .contacts {
+    padding: 0;
+  }
+  .options {
+    gap: 1rem;
+    margin-top: 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .social-media {
+    gap: 2rem;
+    gap: 1rem;
+    width: auto;
+    padding-top: 0;
+    align-self: center;
+  }
+  @media(max-width: 539px) {
+    header {
+      padding: 2rem;
+    }
+    header>img {
+      width: 90px;
+    }
+    header>div {
+      column-gap: 2rem;
+    }
+    .instructions>h2 {
+      width: 80%;
+    }
+  }
 }
