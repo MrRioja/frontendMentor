@@ -21,10 +21,23 @@ html, body {
   height: 100%;
 }
 
+/* Scrollbar */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #9fabb2;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px transparent solid;
+}
+
 /* Header */
 
 header {
   width: 100%;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +45,7 @@ header {
 
 .bg-header {
   width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -275,62 +289,78 @@ footer {
   .logo {
     width: 75px;
   }
+
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .download {
     top: 0;
+    margin-bottom: 3rem;
   }
+
   .download>h1, .download>p {
     width: 80%;
     text-align: center;
   }
+
   .download div {
     display: flex;
     flex-direction: column;
   }
+
   .buttons {
     margin-bottom: 1.5em;
   }
+
   .snippets {
     width: 80%;
   }
+
   .snippets>h2, .snippets>p {
     width: 100%;
     text-align: center;
     line-height: normal;
   }
+
   .sides {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .sides>div:nth-child(1) {
     display: flex;
     margin-bottom: 5rem;
     justify-content: center;
   }
+
   .sides div:nth-child(1) img {
     width: 90%;
   }
+
   .right-side {
     display: flex;
     width: 60%;
     flex-direction: column;
     justify-content: center;
   }
+
   .topics {
     padding: 0;
   }
+
   .topics>h3, .topics>p {
     text-align: center;
   }
+
   .topics>p {
     width: 100%;
     margin-bottom: 4rem;
   }
+
   .clipboard {
     width: 80%;
     display: flex;
@@ -339,53 +369,66 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+
   .clipboard>h2 {
     width: 80%;
   }
+
   .clipboard>p {
     width: 70%;
   }
+
   .clipboard>img {
     width: 80%;
   }
+
   .workflow {
     width: 80%;
     text-align: center;
   }
+
   .workflow>p {
     width: 80%;
   }
+
   .tools-container {
     width: 80%;
     align-items: center;
     flex-direction: column;
   }
+
   .tool {
     width: 90%;
     margin-bottom: 2rem;
   }
+
   .brands-container {
     margin-bottom: 4rem;
     flex-direction: column;
   }
+
   .brands-container img {
     margin-bottom: 4rem;
   }
+
   footer {
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .footer-logo {
     margin: 2rem 0;
   }
+
   .options {
     gap: 1.5rem;
     display: flex;
     margin-bottom: 2rem;
     flex-direction: column;
   }
+
   .social-medias {
     gap: 1rem;
     display: flex;
