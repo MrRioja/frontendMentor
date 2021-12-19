@@ -21,6 +21,19 @@ html, body {
   height: 100%;
 }
 
+/* Scrollbar */
+*::-webkit-scrollbar {
+  width: 15px;
+  background: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #00252E;
+  background-clip: padding-box;
+  border: 4px transparent solid;
+}
+
 /* Titles */
 
 .title {
@@ -257,72 +270,89 @@ ion-icon:hover {
   * {
     font-size: 14px;
   }
+
   .started {
     height: auto;
     margin-bottom: 5rem;
   }
+
   .header {
     padding: 2.5rem 2rem;
   }
+
   .header img {
     height: 1.2rem;
   }
+
   .header button {
     width: 6.5rem;
     font-size: 0.7rem;
     border-radius: 2rem;
     padding: 0.6rem 0rem;
   }
+
   .content {
     align-items: center;
     flex-direction: column;
   }
+
   .content div:nth-child(1) {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .content div:nth-child(1) h1 {
     font-size: 1.8rem;
     text-align: center;
   }
+
   .content div:nth-child(1) p {
     width: 82%;
     text-align: center;
     margin-bottom: 3rem;
   }
+
   .content div:nth-child(1) button {
     margin: 0 auto;
   }
+
   .content div:nth-child(2) {
     width: 90%;
   }
+
   .card {
     display: flex;
     padding: 3rem 1.5rem;
     flex-direction: column-reverse;
   }
+
   .card>div:nth-child(1) h3 {
     font-size: 1.5rem;
   }
+
   .card>div:nth-child(1) h3, .card>div:nth-child(1) p {
     width: 85%;
     text-align: center;
   }
+
   .card div:nth-child(2) {
     display: flex;
     margin-bottom: 2rem;
     justify-content: center;
     margin-bottom: 2rem;
   }
+
   .card div:nth-child(2) img {
     width: 80%;
   }
+
   .cards .card:nth-child(2) {
     display: flex;
     flex-direction: column-reverse;
   }
+
   .cards .card:nth-child(4) {
     width: 90%;
     bottom: -85px;
@@ -333,34 +363,42 @@ ion-icon:hover {
     flex-direction: column;
     justify-content: center;
   }
+
   .cards .card:nth-child(4) h2 {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+
   footer {
     flex-direction: column;
     padding: 8rem 1.5rem 3rem;
     display: flex;
   }
+
   footer>div:nth-child(1) svg {
     width: 50%;
   }
+
   footer>div:nth-child(1)>div img {
     margin-right: 1.5rem;
   }
+
   footer>div:nth-child(2) {
     width: 100%;
     display: flex;
     margin: 2rem 0;
     flex-direction: column;
   }
+
   footer>div>div {
     width: 80%;
     line-height: 1.5rem;
   }
+
   footer>div:nth-child(2) a {
     margin-bottom: 1rem;
   }
+
   footer>div:nth-child(3) div {
     margin-bottom: 2rem;
     width: auto;
@@ -368,9 +406,11 @@ ion-icon:hover {
     display: flex;
     justify-content: center;
   }
+
   footer>div:nth-child(3) div a {
     margin-top: 0;
   }
+
   footer span {
     margin: 0;
     text-align: center;
