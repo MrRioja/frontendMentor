@@ -56,6 +56,7 @@ html, body {
 
 .started {
   height: 100vh;
+  padding: 0 2.5%;
   margin-bottom: 7rem;
   background-size: contain;
   background-position: center;
@@ -70,7 +71,7 @@ html, body {
 .header {
   display: flex;
   align-items: center;
-  padding: 3rem 3rem 1.5rem;
+  padding: 3rem 2rem 1.5rem;
   justify-content: space-between;
 }
 
@@ -178,7 +179,7 @@ html, body {
 }
 
 .cards .card:nth-child(4) {
-  width: 50%;
+  width: 45%;
   display: flex;
   bottom: -120px;
   position: relative;
@@ -246,24 +247,44 @@ footer>div:nth-child(2) a:hover {
   text-decoration: underline;
 }
 
-footer>div:nth-child(3) a {
-  margin-right: 1rem;
-  margin-top: 4.5rem;
-}
-
 footer>span {
   grid-column: 3/4;
   margin-top: 2rem;
   font-size: .7rem;
 }
 
-ion-icon {
-  color: white;
-  font-size: 1.2rem;
+/* Social Medias */
+
+.social-media {
+  width: 40%;
+  display: grid;
+  padding-top: 5.4rem;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-ion-icon:hover {
+.medias-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.medias-container i {
+  font-size: 1.1rem;
+}
+
+.medias-container:hover i {
+  cursor: pointer;
   color: var(--Pink);
+}
+
+.medias-container:hover {
+  cursor: pointer;
+  border: 1px solid var(--Pink);
 }
 
 @media(max-width: 375px) {
@@ -399,16 +420,11 @@ ion-icon:hover {
     margin-bottom: 1rem;
   }
 
-  footer>div:nth-child(3) div {
-    margin-bottom: 2rem;
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  footer>div:nth-child(3) div a {
-    margin-top: 0;
+  .social-media {
+    gap: 1rem;
+    padding: 0;
+    width: 50%;
+    align-self: center;
   }
 
   footer span {
