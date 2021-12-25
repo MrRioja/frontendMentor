@@ -42,7 +42,7 @@ html, body {
 }
 
 .container h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 0.8rem;
 }
 
@@ -121,7 +121,7 @@ html, body {
 }
 
 .card-3 p {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 @media(max-width: 650px) {
