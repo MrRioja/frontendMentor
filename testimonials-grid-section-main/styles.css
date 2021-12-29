@@ -44,7 +44,7 @@ html, body {
 /* Content */
 
 .content {
-  padding: 10%;
+  padding-inline: 5%;
 }
 
 /* Testimonials container */
