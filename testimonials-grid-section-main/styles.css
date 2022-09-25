@@ -3,12 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  Font-size: 13px;
+  font-size: 13px;
   box-sizing: border-box;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   display: flex;
   align-items: center;
@@ -36,9 +37,9 @@ html, body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--light-grayish-blue);
   background-clip: padding-box;
   border: 4px transparent solid;
+  background: var(--light-grayish-blue);
 }
 
 /* Content */
@@ -61,9 +62,9 @@ html, body {
 /* Testimonial card's */
 
 .testimonial {
-  padding: 2rem 2.5rem;
   overflow: hidden;
   border-radius: 1rem;
+  padding: 2rem 2.5rem;
 }
 
 .person {
@@ -98,7 +99,7 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.testimonial p+p {
+.testimonial p + p {
   width: 85%;
   opacity: 0.7;
   font-size: 1rem;
@@ -117,8 +118,9 @@ html, body {
 
 /* Testimonial card's positions */
 
-.testimonial:first-child .person img, .testimonial:last-child .person img {
-  border: 2px solid #A775F1;
+.testimonial:first-child .person img,
+.testimonial:last-child .person img {
+  border: 2px solid #a775f1;
 }
 
 .testimonial:nth-child(1) {
@@ -152,7 +154,7 @@ html, body {
   background: var(--very-dark-blackish-blue);
 }
 
-@media(max-width: 1190px) {
+@media (max-width: 1190px) {
   * {
     font-size: 12px;
   }
@@ -162,7 +164,7 @@ html, body {
   }
 }
 
-@media(max-width: 950px) {
+@media (max-width: 950px) {
   .testimonials-container {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -195,20 +197,18 @@ html, body {
   }
 
   .testimonial:nth-child(5) {
-
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
 }
 
-@media(max-width: 730px) {
+@media (max-width: 730px) {
   .testimonial {
     padding: 1.5rem;
   }
-
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   html {
     height: auto;
   }
@@ -221,7 +221,7 @@ html, body {
     padding: 2.5rem;
   }
 
-  .testimonial p+p {
+  .testimonial p + p {
     width: 100%;
   }
 
@@ -255,5 +255,4 @@ html, body {
     grid-row: 4 / 5;
     grid-column: 1 / 1;
   }
-
 }

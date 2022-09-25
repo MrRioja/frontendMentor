@@ -2,14 +2,14 @@
 
 :root {
   /* Primary */
-  --Dark-Blue-email-bg: #1c2431;
   --Dark-Blue-main-bg: #181f2a;
+  --Dark-Blue-email-bg: #1c2431;
   --Dark-Blue-footer-bg: #0b1523;
   --Dark-Blue-testimonials-bg: #202a3c;
   /* Accent */
+  --Light-Red: #ff4242;
   --Cyan-gradient: #65e2d9;
   --Blue-gradient: #339ecc;
-  --Light-Red: #ff4242;
   /* Neutral */
   --White: #ffffff;
 }
@@ -20,22 +20,23 @@
   font-size: 14px;
   color: var(--White);
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 /* Scrollbar */
 *::-webkit-scrollbar {
   width: 15px;
-  background: #2B3244;
+  background: #2b3244;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #181F2B;
+  background: #181f2b;
   background-clip: padding-box;
   border: 4px transparent solid;
 }
@@ -45,8 +46,8 @@ html, body {
 header {
   display: flex;
   padding: 4rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background: var(--Dark-Blue-email-bg);
 }
 
@@ -60,9 +61,11 @@ header a:hover {
   text-decoration: underline;
 }
 
-header>div {
-  display: flex;
-  column-gap: 4rem;
+header > div {
+  display: grid;
+  column-gap: 1rem;
+  justify-items: center;
+  grid-template-columns: repeat(3, 60px);
 }
 
 /* Main */
@@ -114,7 +117,11 @@ main {
   cursor: pointer;
   font-weight: bold;
   border-radius: 2rem;
-  background: linear-gradient(90deg, var(--Cyan-gradient), var(--Blue-gradient));
+  background: linear-gradient(
+    90deg,
+    var(--Cyan-gradient),
+    var(--Blue-gradient)
+  );
 }
 
 .top {
@@ -194,9 +201,9 @@ main {
 }
 
 .instructions a {
+  height: 35px;
   align-items: center;
   display: inline-flex;
-  height: 35px;
   text-decoration: none;
   color: var(--Cyan-gradient);
   border-bottom: 1px solid var(--Cyan-gradient);
@@ -294,8 +301,8 @@ main {
 }
 
 .get-started h2 {
-  font-size: 2.7rem;
   margin: 0 0 2rem;
+  font-size: 2.7rem;
 }
 
 .get-started p {
@@ -313,13 +320,13 @@ main {
 #email {
   width: 470px;
   border: none;
-  outline: none;
   color: black;
+  outline: none;
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
 
-#email:invalid+span {
+#email:invalid + span {
   display: block;
 }
 
@@ -344,7 +351,7 @@ footer {
   background: var(--Dark-Blue-footer-bg);
 }
 
-.company>img {
+.company > img {
   width: 100px;
   margin-bottom: 3rem;
 }
@@ -378,7 +385,7 @@ footer {
   margin-bottom: 1.2rem;
 }
 
-.contacts span>img {
+.contacts span > img {
   margin-right: 1.5rem;
 }
 
@@ -438,7 +445,7 @@ footer {
   border: 1px solid var(--Cyan-gradient);
 }
 
-@media(max-width: 1175px) {
+@media (max-width: 1175px) {
   .features {
     width: 80%;
     display: flex;
@@ -459,8 +466,8 @@ footer {
 
   .feature p {
     width: 40%;
-    font-size: 1.2rem;
     margin-bottom: 0;
+    font-size: 1.2rem;
   }
 
   .documentation {
@@ -505,12 +512,12 @@ footer {
   }
 }
 
-@media(max-width: 1090px) {
-  .intro>img {
+@media (max-width: 1090px) {
+  .intro > img {
     width: 80%;
   }
 
-  .intro>h1 {
+  .intro > h1 {
     width: 80%;
   }
 
@@ -548,11 +555,11 @@ footer {
     margin-bottom: 1rem;
   }
 
-  #email:invalid+span {
+  #email:invalid + span {
     display: none;
   }
 
-  .email-input>.btn-get-started {
+  .email-input > .btn-get-started {
     width: 100%;
   }
 
@@ -594,7 +601,7 @@ footer {
     align-self: center;
   }
 
-  @media(max-width: 539px) {
+  @media (max-width: 539px) {
     * {
       font-size: 10px;
     }
@@ -603,11 +610,11 @@ footer {
       padding: 2rem;
     }
 
-    header>img {
+    header > img {
       width: 90px;
     }
 
-    header>div {
+    header > div {
       column-gap: 2rem;
     }
 
@@ -617,8 +624,8 @@ footer {
 
     .feature p {
       width: 80%;
-      font-size: 1.2rem;
       margin-bottom: 0;
+      font-size: 1.2rem;
     }
 
     .intro h1 {
@@ -626,7 +633,7 @@ footer {
       margin-bottom: 1.5rem;
     }
 
-    .intro>.btn-get-started {
+    .intro > .btn-get-started {
       margin-bottom: 7rem;
     }
 
@@ -634,9 +641,9 @@ footer {
       width: 100%;
     }
 
-    .instructions>h2 {
-      font-size: 1.5rem;
+    .instructions > h2 {
       width: auto;
+      font-size: 1.5rem;
       text-align: center;
     }
 
@@ -669,7 +676,7 @@ footer {
       font-size: 1.5rem;
     }
 
-    .documentation>img {
+    .documentation > img {
       width: 100%;
     }
 

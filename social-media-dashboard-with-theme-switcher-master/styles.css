@@ -31,10 +31,11 @@
   padding: 0;
   font-size: 14px;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -79,12 +80,12 @@ body {
   justify-content: space-between;
 }
 
-.header-container>div>h1 {
+.header-container > div > h1 {
   font-size: 2rem;
   color: var(--text-primary);
 }
 
-.header-container>div>span {
+.header-container > div > span {
   font-weight: bold;
   color: var(--text-secondary);
 }
@@ -115,7 +116,7 @@ body {
   cursor: pointer;
 }
 
-.toggle-container input:hover+.slider {
+.toggle-container input:hover + .slider {
   background: linear-gradient(90deg, #378fe6, #3eda82);
 }
 
@@ -141,11 +142,11 @@ body {
   background-color: var(--bg);
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background: linear-gradient(90deg, #378fe6, #3eda82);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(-20px);
 }
 
@@ -287,8 +288,8 @@ main {
   padding: 1.5rem;
   border-radius: 5px;
   flex-direction: column;
-  justify-content: space-between;
   background: var(--card-bg);
+  justify-content: space-between;
 }
 
 .card-header {
@@ -298,7 +299,7 @@ main {
   justify-content: space-between;
 }
 
-.card-header>span {
+.card-header > span {
   font-size: 1rem;
   font-weight: bold;
   color: var(--text-secondary);
@@ -325,10 +326,10 @@ main {
   margin-right: 0.5rem;
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   .cards-total-fans {
-    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cards-container {
@@ -336,7 +337,7 @@ main {
   }
 }
 
-@media(max-width: 620px) {
+@media (max-width: 620px) {
   .header-container {
     flex-direction: column;
   }
@@ -349,13 +350,12 @@ main {
     justify-content: space-between;
   }
 
-
   .content {
     top: -75px;
   }
 }
 
-@media(max-width: 510px) {
+@media (max-width: 510px) {
   * {
     font-size: 12px;
   }

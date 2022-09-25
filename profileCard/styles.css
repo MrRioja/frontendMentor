@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-  --dark-cyan: hsl(185, 75%, 39%);
-  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-  --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-grey: hsl(0, 0%, 59%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
 }
 
 /* Reset */
@@ -15,11 +15,14 @@
   box-sizing: border-box;
 }
 
-*, input, button {
-  font-family: 'Kumbh Sans', sans-serif;
+*,
+input,
+button {
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -39,25 +42,25 @@ body {
 }
 
 .top-circle {
-  position: fixed;
-  left: -324px;
   top: -575px;
   z-index: -1;
+  left: -324px;
+  position: fixed;
 }
 
 .bottom-circle {
-  position: fixed;
-  bottom: -680px;
-  right: -260px;
   z-index: -1;
+  right: -260px;
+  bottom: -680px;
+  position: fixed;
 }
 
 .card {
   width: 400px;
   height: 420px;
-  border-radius: 25px;
   overflow: hidden;
   font-size: 0.8rem;
+  border-radius: 25px;
 }
 
 .profileCover {
@@ -71,8 +74,8 @@ body {
 .body {
   display: flex;
   height: 160px;
-  position: relative;
   background: white;
+  position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -94,33 +97,33 @@ body {
 }
 
 .subtitle {
-  color: var(--dark-grey);
   margin-top: 10px;
   font-weight: 400;
+  color: var(--dark-grey);
 }
 
 .footer {
   display: flex;
-  background: white;
-  border-top: 1px solid var(--dark-grey);
   height: 110px;
+  background: white;
   align-items: center;
   justify-content: space-around;
+  border-top: 1px solid var(--dark-grey);
 }
 
 .stats {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .card {
     width: 325px;
     height: 420px;
-    border-radius: 25px;
     overflow: hidden;
     font-size: 0.8rem;
+    border-radius: 25px;
   }
 
   .profileCover img {
@@ -129,16 +132,16 @@ body {
   }
 
   .top-circle {
-    position: fixed;
-    left: -740px;
     top: -490px;
     z-index: -1;
+    left: -740px;
+    position: fixed;
   }
 
   .bottom-circle {
-    position: fixed;
-    bottom: -450px;
-    right: -740px;
     z-index: -1;
+    right: -740px;
+    bottom: -450px;
+    position: fixed;
   }
 }
