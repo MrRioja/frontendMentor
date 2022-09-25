@@ -2,22 +2,23 @@
 
 :root {
   /* Primary */
-  --Strong-Cyan: #26baa4;
   --Light-Blue: #6173ff;
+  --Strong-Cyan: #26baa4;
   /* Neutral */
-  --Dark-Grayish-Blue: #4c545d;
   --Grayish-Blue: #9fabb2;
+  --Dark-Grayish-Blue: #4c545d;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-size: 18px;
   box-sizing: border-box;
-  Font-size: 18px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -56,10 +57,9 @@ header {
 
 .download {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: -3rem;
   position: relative;
+  align-items: center;
+  flex-direction: column;
 }
 
 .download h1 {
@@ -72,44 +72,45 @@ header {
   width: 613px;
   text-align: center;
   line-height: 1.6rem;
-  color: var(--Grayish-Blue);
   margin-bottom: 2rem;
+  color: var(--Grayish-Blue);
 }
 
 .buttons {
-  padding: 1rem 2rem;
   color: white;
-  font-weight: bold;
   outline: none;
   margin: 0 5px;
+  font-weight: bold;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   margin-bottom: 4rem;
 }
 
-.buttons.mac:hover, .buttons.ios:hover {
+.buttons.mac:hover,
+.buttons.ios:hover {
   cursor: pointer;
   filter: brightness(1.25);
 }
 
 .buttons.mac {
-  background: var(--Light-Blue);
   border: var(--Light-Blue);
+  background: var(--Light-Blue);
 }
 
 .buttons.ios {
-  background: var(--Strong-Cyan);
   border: var(--Light-Blue);
+  background: var(--Strong-Cyan);
 }
 
 /* Section Snippets */
 
 .snippets {
   display: flex;
-  line-height: 1.6rem;
-  flex-direction: column;
-  align-items: center;
   position: relative;
+  line-height: 1.6rem;
+  align-items: center;
   margin-bottom: 1rem;
+  flex-direction: column;
 }
 
 .snippets h2 {
@@ -121,15 +122,15 @@ header {
 .snippets p {
   width: 700px;
   text-align: center;
-  color: var(--Grayish-Blue);
   margin-bottom: 4rem;
+  color: var(--Grayish-Blue);
 }
 
 .sides {
-  margin-bottom: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
   width: 100%;
+  display: grid;
+  margin-bottom: 5rem;
+  grid-template-columns: repeat(2, 50%);
 }
 
 .left-side {
@@ -161,9 +162,9 @@ header {
 
 .clipboard {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  flex-direction: column;
 }
 
 .clipboard h2 {
@@ -176,17 +177,17 @@ header {
   width: 613px;
   text-align: center;
   line-height: 1.6rem;
-  color: var(--Grayish-Blue);
   margin-bottom: 5rem;
+  color: var(--Grayish-Blue);
 }
 
 /* Section Workflow */
 
 .workflow {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  flex-direction: column;
 }
 
 .workflow h2 {
@@ -199,8 +200,8 @@ header {
   width: 613px;
   text-align: center;
   line-height: 1.6rem;
-  color: var(--Grayish-Blue);
   margin-bottom: 5rem;
+  color: var(--Grayish-Blue);
 }
 
 .tools-container {
@@ -212,9 +213,9 @@ header {
 .tool {
   width: 33%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .tool img {
@@ -222,8 +223,8 @@ header {
 }
 
 .tool h3 {
-  color: var(--Dark-Grayish-Blue);
   margin-bottom: 1rem;
+  color: var(--Dark-Grayish-Blue);
 }
 
 .tool p {
@@ -234,9 +235,9 @@ header {
 .brands-container {
   width: 90%;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 7rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* Footer */
@@ -245,8 +246,8 @@ footer {
   display: grid;
   height: 150px;
   align-items: center;
-  background: rgba(159, 171, 178, 0.2);
   grid-template-columns: 25% 50% 25%;
+  background: rgba(159, 171, 178, 0.2);
 }
 
 .footer-logo {
@@ -260,8 +261,8 @@ footer {
 }
 
 .options {
-  align-items: center;
   display: grid;
+  align-items: center;
   grid-template-rows: 40px 40px;
   grid-template-columns: repeat(3, 33%);
 }
@@ -272,8 +273,8 @@ footer {
 }
 
 .options a:hover {
-  color: var(--Strong-Cyan);
   filter: brightness(1.1);
+  color: var(--Strong-Cyan);
 }
 
 .social-medias svg {
@@ -281,19 +282,19 @@ footer {
 }
 
 .social-medias svg:hover {
-  cursor: pointer;
   fill: #26baa4;
+  cursor: pointer;
 }
 
-@media(max-width: 950px) {
+@media (max-width: 950px) {
   .logo {
     width: 75px;
   }
 
   main {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .download {
@@ -301,7 +302,8 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .download>h1, .download>p {
+  .download > h1,
+  .download > p {
     width: 80%;
     text-align: center;
   }
@@ -319,7 +321,8 @@ footer {
     width: 80%;
   }
 
-  .snippets>h2, .snippets>p {
+  .snippets > h2,
+  .snippets > p {
     width: 100%;
     text-align: center;
     line-height: normal;
@@ -331,7 +334,7 @@ footer {
     flex-direction: column;
   }
 
-  .sides>div:nth-child(1) {
+  .sides > div:nth-child(1) {
     display: flex;
     margin-bottom: 5rem;
     justify-content: center;
@@ -342,8 +345,8 @@ footer {
   }
 
   .right-side {
-    display: flex;
     width: 60%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -352,11 +355,12 @@ footer {
     padding: 0;
   }
 
-  .topics>h3, .topics>p {
+  .topics > h3,
+  .topics > p {
     text-align: center;
   }
 
-  .topics>p {
+  .topics > p {
     width: 100%;
     margin-bottom: 4rem;
   }
@@ -370,15 +374,15 @@ footer {
     flex-direction: column;
   }
 
-  .clipboard>h2 {
+  .clipboard > h2 {
     width: 80%;
   }
 
-  .clipboard>p {
+  .clipboard > p {
     width: 70%;
   }
 
-  .clipboard>img {
+  .clipboard > img {
     width: 80%;
   }
 
@@ -387,7 +391,7 @@ footer {
     text-align: center;
   }
 
-  .workflow>p {
+  .workflow > p {
     width: 80%;
   }
 
