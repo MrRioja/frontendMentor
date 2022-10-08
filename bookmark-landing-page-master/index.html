@@ -19,6 +19,8 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="text/javascript" src="./tabs.js"></script>
     <title>Bookmark landing page</title>
   </head>
   <body>
@@ -37,7 +39,7 @@
       <div class="left-side">
         <h1>A Simple Bookmark Manager</h1>
         <p>
-          A clean and simple interface to organize your favourite websites. Open
+          A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
 
@@ -47,7 +49,7 @@
         </div>
       </div>
 
-      <div class="retangle"></div>
+      <div class="rectangle"></div>
       <div class="right-side">
         <img src="./images/illustration-hero.svg" alt="Tablet" />
       </div>
@@ -59,19 +61,29 @@
 
         <p>
           Our aim is to make it quick and easy for you to access your <br />
-          favourite websites. Your bookmarks sync between your devices <br />
+          favorite websites. Your bookmarks sync between your devices <br />
           so you can access them on the go.
         </p>
       </div>
 
-      <div class="tabs">
-        <a class="tab active" href="#">Simple Bookmarking</a>
-        <a class="tab" href="#">Speedy Searching</a>
-        <a class="tab" href="#">Easy Sharing</a>
+      <div class="tab">
+        <button
+          class="tablinks active"
+          onclick="openTab(event, 'simple-bookmarking')"
+        >
+          Simple Bookmarking
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'speedy-searching')">
+          Speedy Searching
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'easy-sharing')">
+          Easy Sharing
+        </button>
       </div>
 
-      <div class="retangle"></div>
-      <div class="tabContent">
+      <div class="rectangle"></div>
+
+      <div id="simple-bookmarking" class="tabContent">
         <img src="./images/illustration-features-tab-1.svg" alt="Site image" />
 
         <div>
@@ -80,7 +92,35 @@
           <p>
             Organize your bookmarks however you like. Our simple drag-and-drop
             interface gives you complete control over how you manage your
-            favourite sites.
+            favorite sites.
+          </p>
+          <button>More Info</button>
+        </div>
+      </div>
+
+      <div id="speedy-searching" class="tabContent">
+        <img src="./images/illustration-features-tab-1.svg" alt="Site image" />
+
+        <div>
+          <h2>Intelligent search</h2>
+
+          <p>
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <button>More Info</button>
+        </div>
+      </div>
+
+      <div id="easy-sharing" class="tabContent">
+        <img src="./images/illustration-features-tab-1.svg" alt="Site image" />
+
+        <div>
+          <h2>Share your bookmarks</h2>
+
+          <p>
+            Easily share your bookmark and collections with others. Create a
+            sharable link that you can send at the click of a button.
           </p>
           <button>More Info</button>
         </div>
