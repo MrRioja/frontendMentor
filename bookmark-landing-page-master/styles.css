@@ -163,7 +163,7 @@ nav button:hover {
   flex-direction: column;
 }
 
-.features div:first-child {
+.features>div:first-child {
   display: flex;
   text-align: center;
   margin-bottom: 3rem;
@@ -217,17 +217,37 @@ nav button:hover {
   z-index: 2;
   display: none;
   padding: 0 20%;
+  column-gap: 5.5rem;
   justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #simple-bookmarking {
-  display: block;
+  display: grid;
 }
 
 .tabContent>img {
-  width: 35%;
+  width: 100%;
 }
 
 .tabContent>div {
-  width: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tabContent>div>p {
+  text-align: left;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--grayish-Blue);
+}
+
+.tabContent>div .button {
+  font-weight: bold;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  background: var(--softBlue);
+  color: var(--grayish-SoftBlue);
 }
